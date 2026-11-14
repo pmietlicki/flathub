@@ -1,0 +1,49 @@
+{
+  "application_id": "com.nonetchat.app",
+  "version": "0.3.0",
+  "architecture": "x86_64",
+  "project_license": "Apache-2.0",
+  "runtime": "org.gnome.Platform/x86_64/50",
+  "runtime_commit": "4337a389125f814785bd83f4ace01da5b6baa80fdcf5a9c81e60dcd03896c067",
+  "sdk": "org.gnome.Sdk/x86_64/50",
+  "sdk_commit": "eb50b0d668d379b1dbfc9acb153425b6100390a94368b0c395ddad3a7d0f64a6",
+  "artifact": {
+    "file": "NoNetChat-0.3.0-x86_64.flatpak",
+    "size_bytes": 78582088,
+    "sha256": "b2e4e658d534b335f25e6169d2d5bd3ea5eebf4b68ef169ed5cc837a7ffc1c69",
+    "commit": "a599b317330e4461328ce7e53e07b5923a97f3f3e7bd2cc54925cdf8695cd5eb"
+  },
+  "checks": {
+    "shell_syntax": "passed",
+    "desktop_file_validate": "passed",
+    "manifest_parsing": "passed",
+    "archive_sha256": "passed",
+    "eight_icon_sizes": "passed",
+    "four_reference_screenshot_checksums_and_dimensions": "passed",
+    "appstream_validate_no_net": "passed",
+    "appstream_validate_pedantic_online": "passed",
+    "appstream_validate_tree_no_net": "passed",
+    "flatpak_builder_build_and_export": "passed",
+    "flatpak_build_bundle": "passed",
+    "install_generated_bundle_in_isolated_user_installation": "passed",
+    "native_dependencies_in_platform_runtime": "passed",
+    "all_246_native_bundle_files_preserved_byte_for_byte": "passed",
+    "packaged_desktop_metainfo_launcher_and_icons_match_sources": "passed",
+    "installed_application_visible_and_running": "passed"
+  },
+  "gui": {
+    "backend": "X11",
+    "display": "Xvfb",
+    "renderer": "llvmpipe",
+    "keyring": "isolated unlocked test collection",
+    "observation_seconds_after_window_appeared": 10,
+    "result": "Window visible, interface rendered, application remained active until test cleanup",
+    "screenshot": "screenshots/nonetchat-linux.png",
+    "correction": "The earlier check searched Xvfb while the application opened on the existing Wayland session; that check did not establish an application exit."
+  },
+  "not_exercised": [
+    "Physical Bluetooth connection between devices",
+    "Physical microphone, speaker and camera operation",
+    "End-to-end WebRTC call and peer-to-peer transfer"
+  ]
+}
